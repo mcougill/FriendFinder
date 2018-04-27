@@ -27,7 +27,7 @@ module.exports = function (app) {
 
 
         //iterate over friend list to calculate score difference 
-        for (i = 0; i < 4; i++) {
+        for (i = 0; i < friendData.length; i++) {
 
             totalDifference = 0;
 
@@ -44,7 +44,7 @@ module.exports = function (app) {
 
                     //make new match
                     bestMatch.name = friendData[i].name;
-                    //bestMatch.photo = friendData[i].photo;
+                    bestMatch.photo = friendData[i].photo;
                     bestMatch.friendDifference = totalDifference;
                 }
             }
