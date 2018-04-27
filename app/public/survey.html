@@ -14,246 +14,188 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="public/style.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style.css">
 </head>
 
 <body>
     <div class="container">
 
-        <h2>Survery Questions</h2>
+        <h2>Survey Questions</h2>
         <hr>
         <h3>
-            About You
+            Basic Information:
         </h3>
         <h4>Name (Required)</h4>
         <input type="text" id="name" class="form-control" required>
         <h4>Link to Photo (Required)</h4>
         <input type="text" id="photo" class="form-control" required>
         <hr>
-
-        <h3>
-            Question 1
-        </h3>
-        <h4> I typically follow my brain over my heart.</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
-        </div>
+        <h5>Please answer each question with a number between 1 and 5. 1 means strongly disagree while 5 means strongly agree. </h5>
         <br>
-        <h3>
-            Question 2
-        </h3>
-        <h4> Suits are my favorite clothing item .</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question01">1. I typically follow my brain over my heart. </label>
+            <select class="form-control col-md-2" id="q1" name="scores[0]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 3
-        </h3>
-        <h4> People describe me as mischievous.</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question02"></label>2. Suits are my favorite clothing item. </label>
+            <select class="form-control col-md-2" id="q2" name="scores[1]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 4
-        </h3>
-        <h4> Red cowboy boots are my favorite clothing item.</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question03">3. People describe me as mischievous. </label>
+            <select class="form-control col-md-2" id="q3" name="scores[2]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 5
-        </h3>
-        <h4> People describe me as caring and nurturing .</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question04">4. Red cowboy boots are my favorite clothing item. </label>
+            <select class="form-control col-md-2" id="q4" name="scores[3]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 6
-        </h3>
-        <h4> Scotch is my drink of choice .</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question05">5. People describe me as caring and nurturing. </label>
+            <select class="form-control col-md-2" id="q5" name="scores[4]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 7
-        </h3>
-        <h4> The Playbook is my favorite book.</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question06">6. Scotch is my drink of choice. </label>
+            <select class="form-control col-md-2" id="q6" name="scores[5]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 8
-        </h3>
-        <h4> Poutine is my favorite food.</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question07">7. The Playbook is my favorite book. </label>
+            <select class="form-control col-md-2" id="q7" name="scores[6]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 9
-        </h3>
-        <h4> I believe everything happens for a reason.</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question08">8. Poutine is my favorite food. </label>
+            <select class="form-control col-md-2" id="q8" name="scores[7]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
 
-        <h3>
-            Question 10
-        </h3>
-        <h4> The French horn is my favorite instrument.</h4>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Your Selection
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="1">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" value="1">2</a>
-                <a class="dropdown-item" value="1">3</a>
-                <a class="dropdown-item" value="1">4</a>
-                <a class="dropdown-item" value="1">5 (Strongly Agree)</a>
-
-            </div>
+        <div class="form-group">
+            <label for="question09">9. I believe everything happens for a reason. </label>
+            <select class="form-control col-md-2" id="q9" name="scores[8]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
-            <i class="fa fa-check-circle" aria-hidden="true"></i>
-            Submit</button>
-        <br>
-        <footer class="footer">
-            <div class="container">
-                <p>
-                    <a href="/api/friends">API Friends List</a> |
-                    <a href="https://github.com/mcougill/FriendFinder">GitHub Repo</a>
-                </p>
-            </div>
-        </footer>
-    </div>
 
-    </div>
+
+        <div class="form-group">
+            <label for="question010">10. The French horn is my favorite instrument. </label>
+            <select class="form-control col-md-2" id="q10" name="scores[9]">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <br>
+
+
+
+        <div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" value="Request Friend" id="submit">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
+            <br>
+            <footer class="footer">
+                <div class="container">
+                    <p>
+                        <a href="/api/friends">API Friends List</a> |
+                        <a href="https://github.com/mcougill/FriendFinder">GitHub Repo</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+
+
+            $('#submit').on("click", function () {
+                var currentURL = window.location.origin;
+                
+                var userInput = {
+                    name: $('#name').val().trim(),
+                    //photo: $('#photo').val().trim(),
+                   scores: [$('#q1').val().trim(), $('#q2').val().trim(), $('#q3').val().trim(), $('#q4').val().trim(), $('#q5').val().trim(), $('#q6').val().trim(), $('#q7').val().trim(), $('#q8').val().trim(), $('#q9').val().trim(), $('#q10').val().trim()]
+                }
+                
+
+                 $.ajax({ url: currentURL + '/api/friends', method: "GET" })
+                 .done(function (bestMatch) {
+                   console.log(bestMatch);
+                     })
+
+        });
+
+        </script>
 
 </body>
 

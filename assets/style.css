@@ -1,3 +1,24 @@
-body {
-    color:red;
+.container {
+    font-size: 20px;
+    background-color:rgba(255,255,255,.8);
+    margin-top:20px;
 }
+
+h2 {
+    text-align: center;
+}
+
+.jumbotron {
+    text-align: center;
+    margin:50px;
+    opacity: .8;
+   
+}
+
+body {
+    background: url("./Images/bricks.jpg") ;
+    background-size:cover;
+}
+
+
+
