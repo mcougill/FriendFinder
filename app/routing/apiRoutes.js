@@ -27,7 +27,7 @@ module.exports = function (app) {
 
 
         //iterate over friend list to calculate score difference 
-        for (i = 0; i < friendData.length; i++) {
+        for (i = 0; i < 4; i++) {
 
             totalDifference = 0;
 
@@ -53,7 +53,7 @@ module.exports = function (app) {
 
         //add new user
         friendData.push(userData);
-        
+
         //return best match
         res.json(bestMatch);
 

@@ -30,7 +30,8 @@
         <h4>Link to Photo (Required)</h4>
         <input type="text" id="photo" class="form-control" required>
         <hr>
-        <h5>Please answer each question with a number between 1 and 5. 1 means strongly disagree while 5 means strongly agree. </h5>
+        <h5>Please answer each question with a number between 1 and 5. 1 means strongly disagree while 5 means strongly agree.
+            </h5>
         <br>
         <div class="form-group">
             <label for="question01">1. I typically follow my brain over my heart. </label>
@@ -171,6 +172,28 @@
         </div>
 
 
+
+        <div class="modal" id="friendModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
@@ -180,19 +203,22 @@
 
             $('#submit').on("click", function () {
                 var currentURL = window.location.origin;
-                
+
+                event.preventDefault();
+                $("#friendModal").modal("show");
+
                 var userInput = {
                     name: $('#name').val().trim(),
                     //photo: $('#photo').val().trim(),
-                   scores: [$('#q1').val().trim(), $('#q2').val().trim(), $('#q3').val().trim(), $('#q4').val().trim(), $('#q5').val().trim(), $('#q6').val().trim(), $('#q7').val().trim(), $('#q8').val().trim(), $('#q9').val().trim(), $('#q10').val().trim()]
+                    scores: [$('#q1').val().trim(), $('#q2').val().trim(), $('#q3').val().trim(), $('#q4').val().trim(), $('#q5').val().trim(), $('#q6').val().trim(), $('#q7').val().trim(), $('#q8').val().trim(), $('#q9').val().trim(), $('#q10').val().trim()]
                 }
-                
 
-                $.post(currentURL + "/api/friends", userInput, function(data){
-                   console.log(data.name);
+
+                $.post(currentURL + "/api/friends", userInput, function (data) {
+                    console.log(data.name);
                 })
 
-        });
+            });
 
         </script>
 
