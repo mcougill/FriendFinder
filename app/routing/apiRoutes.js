@@ -4,7 +4,7 @@ module.exports = function (app) {
 
     //API GET request
     app.get("/api/friends", function (req, res) {
-        res.json(friendData);
+        return res.json(friendData);
     });
 
     //API POST request
@@ -31,6 +31,8 @@ module.exports = function (app) {
 
             totalDifference = 0;
 
+            console.log(totalDifference);
+
 
             for (j = 0; j < friendData[i].scores[j]; j++) {
 
@@ -49,6 +51,9 @@ module.exports = function (app) {
         }
 
 
+        //add new user
+        friendData.push(userData);
+        
         //return best match
         res.json(bestMatch);
 
