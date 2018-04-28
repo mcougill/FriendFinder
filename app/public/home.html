@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <title>Friend Finder - Survey</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
@@ -14,13 +14,29 @@
 </head>
 
 <body>
-        <div class="jumbotron">
-                <h1 class="display-4">Friend Finder</h1>
-                <p class="lead">How I Met Your Mother Edition </p>
-                <hr class="my-4">
-                <p>Answer a few basic questions and find the character with the greatest compatibiity!</p>
-                <a class="btn btn-primary btn-lg" href="/survey" role="button">Go to Survey</a>
-              </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Friend Finder</h1>
+        <p class="lead">How I Met Your Mother Edition </p>
+        <hr class="my-4">
+        <p>Answer a few basic questions and find the character with the greatest compatibiity!</p>
+        <a class="btn btn-primary btn-lg" href="/survey" role="button">Go to Survey</a>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" value="Request Friend" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a> |
+                    <a href="https://github.com/mcougill/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
 
 </body>
 
